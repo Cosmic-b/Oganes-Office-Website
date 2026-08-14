@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Backroll — Oganes Office projects</title>
+    <link rel="stylesheet" href="./backroll.css">
+    <script src="./backroll.js" defer></script>
+</head>
+<body>
+    <main>
+        <header class="page-header">
+            <p class="product-name">Backroll</p>
+            <h1>Oganes Office projects</h1>
+            <p>Create and edit the JSON database used by the portfolio.</p>
+        </header>
+
+        <form id="project-form">
+            <div class="form-heading">
+                <h2 id="form-title">Add project</h2>
+                <p>All fields are required. Each full-size shot is paired with its thumbnail.</p>
+            </div>
+
+            <div class="field-grid">
+                <div class="field field-wide">
+                    <label for="name">Project name</label>
+                    <input id="name" name="name" type="text" autocomplete="off" required>
+                </div>
+
+                <div class="field">
+                    <label for="typetag">Type tag</label>
+                    <input id="typetag" name="typetag" type="text" autocomplete="off" placeholder="Documentary" required>
+                </div>
+
+                <div class="field">
+                    <label for="visibility">Visibility</label>
+                    <select id="visibility" name="visibility" required>
+                        <option value="shown">Shown</option>
+                        <option value="flagman">Flagman</option>
+                        <option value="hidden">Hidden</option>
+                    </select>
+                </div>
+
+                <div class="field field-wide">
+                    <label for="youtube">YouTube link</label>
+                    <input id="youtube" name="youtube" type="url" inputmode="url" autocomplete="url" placeholder="https://www.youtube.com/watch?v=…" required>
+                </div>
+
+                <div class="field field-wide">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </div>
+            </div>
+
+            <fieldset>
+                <legend>Shots</legend>
+                <p class="fieldset-help">Paths may be relative to the site root or absolute URLs.</p>
+                <div id="shots-fields"></div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button id="submit-button" class="primary" type="submit">Add project</button>
+                <button id="cancel-button" type="button" hidden>Cancel editing</button>
+            </div>
+        </form>
+
+        <p id="status" role="status" aria-live="polite"></p>
+
+        <section aria-labelledby="database-heading">
+            <div class="section-heading">
+                <div>
+                    <h2 id="database-heading">Project database</h2>
+                    <p id="project-count">0 projects</p>
+                </div>
+                <label class="file-button" for="json-file">Import JSON</label>
+                <input id="json-file" type="file" accept=".json,application/json">
+            </div>
+            <div id="database-list"></div>
+        </section>
+
+        <section aria-labelledby="save-heading">
+            <h2 id="save-heading">Export database</h2>
+            <div class="save-row">
+                <div class="field">
+                    <label for="save-filename">File name</label>
+                    <input id="save-filename" type="text" value="joints.json" autocomplete="off">
+                </div>
+                <button id="save-json-button" class="primary" type="button">Save JSON</button>
+            </div>
+        </section>
+
+        <section aria-labelledby="json-heading">
+            <h2 id="json-heading">JSON preview</h2>
+            <pre id="output"></pre>
+        </section>
+    </main>
+</body>
+</html>

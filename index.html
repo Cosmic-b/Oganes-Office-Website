@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Oganes Office — video production focused on story, atmosphere and detail.">
+  <title>Oganes Office</title>
+  <link rel="stylesheet" href="site/style.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Main navigation">
+    <a class="brand" href="#" aria-label="Oganes Office home">Oganes<br>Office</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#contact" data-contact-trigger>Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-scroll" aria-label="Oganes Office introduction">
+      <div class="hero">
+        <video class="hero-video" autoplay muted playsinline preload="auto" tabindex="-1" aria-hidden="true">
+          <source media="(max-width: 767px)" src="site/mp4/hero-mobile.mp4" type="video/mp4">
+          <source src="site/mp4/hero-scroll.mp4" type="video/mp4">
+        </video>
+        <h1 class="hero-title" aria-label="Oganes Office"><span>Oganes</span><span>Office</span></h1>
+      </div>
+    </section>
+
+    <div class="interface">
+      <section class="projects" id="projects">
+        <div class="section-heading">
+          <h2>Projects</h2>
+        </div>
+        <div id="projects-list" aria-live="polite">
+          <p class="projects-status">Loading projects…</p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-about">
+          <p class="footer-logo">Oganes Office</p>
+        </div>
+        <div class="footer-right">
+          <div class="socials">
+            <a href="#contact" data-contact-trigger>Contact</a>
+          </div>
+          <p class="copyright">© 2026 · <a href="https://cosmic-b.github.io/3-cosmicsite" target="_blank" rel="noopener noreferrer">Designed by Cosmic</a></p>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <div class="site-modal" id="site-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" hidden>
+    <h2 class="visually-hidden" id="modal-title">Modal</h2>
+    <button class="modal-close" type="button" aria-label="Close modal">×</button>
+    <div class="modal-content"></div>
+  </div>
+
+  <noscript><style>.site-header,.interface{opacity:1!important;visibility:visible!important}.hero-title{color:#bd1019!important}</style></noscript>
+  <script src="site/script.js"></script>
+</body>
+</html>
