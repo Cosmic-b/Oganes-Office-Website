@@ -56,7 +56,7 @@ body.interface-visible .site-header { opacity: 1; visibility: visible; }
 nav { display: flex; gap: clamp(26px, 3.3vw, 54px); padding-top: 5px; }
 nav a, .section-heading, .eyebrow, .watch-link, footer { text-transform: uppercase; }
 nav a { font-size: 12.65px; letter-spacing: .12em; }
-nav a:hover, .socials a:hover { color: var(--red); }
+nav a:hover { color: var(--red); }
 
 .hero-scroll { height: 100vh; height: 100svh; }
 
@@ -244,14 +244,13 @@ footer {
   min-height: 0;
   padding: 44px 0 26px;
   color: #656663;
-  font-size: 10.58px;
+  font-size: 8.46px;
   letter-spacing: .16em;
   line-height: 1.8;
 }
 .footer-logo { margin: 0 0 4px; color: #8c8d89; white-space: nowrap; }
-.footer-right { display: flex; align-items: center; gap: clamp(20px, 4vw, 60px); white-space: nowrap; }
-.socials { display: flex; gap: 38px; }
-.copyright { margin: 0 0 4px; white-space: nowrap; }
+.footer-right { display: flex; align-items: baseline; gap: clamp(20px, 4vw, 60px); white-space: nowrap; }
+.copyright { margin: 0; white-space: nowrap; }
 .copyright a:hover { color: var(--red); }
 
 @media (max-width: 700px) {
