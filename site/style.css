@@ -248,7 +248,20 @@ footer {
   letter-spacing: .16em;
   line-height: 1.8;
 }
-.footer-logo { margin: 0 0 4px; color: #8c8d89; white-space: nowrap; }
+.footer-logo {
+  margin: 0 0 4px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #8c8d89;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.footer-logo:hover { color: var(--red); }
+.footer-logo:focus-visible { outline: 1px solid var(--red); outline-offset: 7px; }
 .footer-right { display: flex; align-items: baseline; gap: clamp(20px, 4vw, 60px); white-space: nowrap; }
 .copyright { margin: 0; white-space: nowrap; }
 .copyright a:hover { color: var(--red); }

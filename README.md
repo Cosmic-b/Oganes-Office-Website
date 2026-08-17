@@ -1,31 +1,13 @@
-# Oganes Office Website
+# 🎬 Oganes Office
 
-A simple portfolio website for Oganes Office.
+🧭 **Header / Шапка** — Logo and links to Projects and Contact. / Логотип и ссылки на проекты и контакты.
 
-It includes:
+🎞️ **Hero / Главный экран** — An introductory video with the Oganes Office title. / Вступительное видео с названием Oganes Office.
 
-- responsive desktop and mobile hero videos;
-- projects loaded from JSON;
-- YouTube video embeds;
-- full-screen shot and contact modals;
-- Backroll, a small browser tool for editing project data.
+📁 **Projects / Проекты** — A list of featured work with its type, title, description, and video. / Список избранных работ с типом, названием, описанием и видео.
 
-Projects are stored in `joints/joints.json`. Images are stored in a matching
-folder such as `joints/universum/`.
+🖼️ **Shots / Кадры** — A gallery of project stills that open full screen. / Галерея кадров из проекта, которые открываются на весь экран.
 
----
+💬 **Contact / Контакты** — Links to Telegram, Instagram, YouTube, and email. / Ссылки на Telegram, Instagram, YouTube и электронную почту.
 
-# Сайт Oganes Office
-
-Простой сайт-портфолио для Oganes Office.
-
-В проекте есть:
-
-- адаптивные hero-видео для компьютеров и телефонов;
-- загрузка проектов из JSON;
-- видео с YouTube;
-- полноэкранные окна для кадров и контактов;
-- Backroll — небольшой браузерный редактор проектов.
-
-Проекты хранятся в `joints/joints.json`. Изображения каждого проекта лежат
-в отдельной папке, например `joints/universum/`.
+©️ **Footer / Подвал** — The studio name, copyright, and design credit. / Название студии, копирайт и автор дизайна.
