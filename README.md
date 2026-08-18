@@ -6,8 +6,8 @@
 
 📁 **Projects / Проекты** — A list of featured work with its type, title, description, and video. / Список избранных работ с типом, названием, описанием и видео.
 
-🖼️ **Shots / Кадры** — A gallery of project stills that open full screen. / Галерея кадров из проекта, которые открываются на весь экран.
+🖼️ **Shots / Шоты** — A gallery of project stills that open full screen. / Галерея кадров из проекта, которые открываются на весь экран.
 
 💬 **Contact / Контакты** — Links to Telegram, Instagram, YouTube, and email. / Ссылки на Telegram, Instagram, YouTube и электронную почту.
 
-©️ **Footer / Подвал** — The studio name, copyright, and design credit. / Название студии, копирайт и автор дизайна.
+©️ **Footer / Днище** — The studio name, copyright, and design credit. / Название студии, копирайт и автор дизайна.
